@@ -1,223 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>nsimsam</title>
+---
+layout: default
+title: About
+---
+<div class="hero-about">
+<img class="avatar" src="{{ '/assets/images/noor.jpg' | relative_url }}" alt="Noor Simsam">
+<div>
+<h2>Noor Simsam</h2>
+<p class="role">Medical Student</p>
+</div>
+</div>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-:root{
-    --bg:#0d1117;
-    --card:rgba(255,255,255,.05);
-    --border:rgba(255,255,255,.08);
-    --text:#f3f4f6;
-    --muted:#9ca3af;
-    --accent:#8b5cf6;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    background:
-    radial-gradient(circle at top,#312e81 0%,transparent 40%),
-    radial-gradient(circle at bottom right,#0f766e 0%,transparent 35%),
-    var(--bg);
-
-    color:var(--text);
-    font-family:Inter,sans-serif;
-    line-height:1.7;
-}
-
-.container{
-    width:min(900px,90%);
-    margin:auto;
-}
-
-header{
-    padding:80px 0 60px;
-}
-
-h1{
-    font-size:4rem;
-    font-weight:700;
-}
-
-.tagline{
-    color:var(--muted);
-    margin-top:10px;
-    font-size:1.15rem;
-}
-
-nav{
-    margin-top:30px;
-    display:flex;
-    gap:20px;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    opacity:.8;
-}
-
-nav a:hover{
-    opacity:1;
-}
-
-.post{
-    background:var(--card);
-    backdrop-filter:blur(18px);
-    border:1px solid var(--border);
-    border-radius:20px;
-    padding:30px;
-    margin-bottom:28px;
-    transition:.25s;
-}
-
-.post:hover{
-    transform:translateY(-4px);
-}
-
-.date{
-    color:var(--muted);
-    font-size:.9rem;
-    margin-bottom:10px;
-}
-
-.post h2{
-    margin-bottom:15px;
-}
-
-.post p{
-    color:#d1d5db;
-}
-
-.readmore{
-    display:inline-block;
-    margin-top:18px;
-    color:var(--accent);
-    text-decoration:none;
-}
-
-footer{
-    padding:70px 0;
-    color:var(--muted);
-    text-align:center;
-}
-
-.hero{
-    margin:50px 0;
-    border-radius:30px;
-    height:260px;
-    background:
-    linear-gradient(135deg,#8b5cf6,#06b6d4);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:2rem;
-    font-weight:700;
-    letter-spacing:3px;
-}
-</style>
-
-</head>
-<body>
-
-<div class="container">
-
-<header>
-
-<h1>nsimsam</h1>
-
-<p class="tagline">
-Thoughts on software, AI, design, and whatever else catches my attention.
+<div class="post">
+<p>
+Noor Simsam is a Syrian-Canadian Muslim medical student working at the
+intersection of equity and innovation, drawing on biomedical engineering, AI,
+and bioinformatics to improve care in underserved settings and for
+historically marginalized communities. Having emigrated from Syria, she
+witnessed firsthand the impact of war on healthcare systems, which shaped her
+interest in frugal biomedical engineering and open-source technology &mdash;
+an interest she later deepened through her MSc thesis on diagnostic inequity
+and her patient advocacy work.
 </p>
-
-<nav>
-<a href="#">Home</a>
-<a href="#">Archive</a>
-<a href="#">Projects</a>
-<a href="#">About</a>
-</nav>
-
-<div class="hero">
-WELCOME
-</div>
-
-</header>
-
-<section>
-
-<article class="post">
-
-<div class="date">
-July 2026
-</div>
-
-<h2>Building in Public</h2>
 
 <p>
-This is my first post. I'll be writing about programming,
-AI, interesting tools, and the things I'm learning along the way.
+She has served as a global fellow with the Institute for Healthcare
+Improvement, where she led a quality improvement initiative to introduce
+3D-printed otoscopes in a Pacific Island nation. She co-founded the Canadian
+Muslim Women in Medicine Network (CMWIM), advancing mentorship and
+representation for Muslim women in medicine, and her advocacy for racialized
+youth and Syrian refugees has been recognized with Leadership and Community
+Service awards.
 </p>
-
-<a class="readmore" href="#">
-Read →
-</a>
-
-</article>
-
-<article class="post">
-
-<div class="date">
-Coming Soon
-</div>
-
-<h2>Why Simple Websites Age Better</h2>
 
 <p>
-Fast, readable, and distraction-free. Sometimes less really is more.
+Outside of work, she enjoys tinkering with tech, DIY projects, nature biking,
+and competitive Uno with family.
 </p>
-
-<a class="readmore" href="#">
-Read →
-</a>
-
-</article>
-
-<article class="post">
-
-<div class="date">
-Projects
 </div>
-
-<h2>Things I'm Building</h2>
-
-<p>
-Open-source experiments, tiny apps, and ideas worth sharing.
-</p>
-
-<a class="readmore" href="#">
-Explore →
-</a>
-
-</article>
-
-</section>
-
-<footer>
-Made with ☕ and GitHub Pages
-</footer>
-
-</div>
-
-</body>
-</html>
