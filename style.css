@@ -77,17 +77,6 @@ a{
     padding-top:8px;
 }
 
-/* avatar */
-.avatar{
-    width:88px;
-    height:88px;
-    border-radius:50%;
-    object-fit:cover;
-    margin-bottom:24px;
-    border:2px solid var(--card-bg);
-    box-shadow:0 0 0 1px var(--border);
-}
-
 /* intro */
 .intro{
     font-family:var(--serif);
