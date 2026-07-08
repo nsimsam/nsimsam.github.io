@@ -124,49 +124,68 @@ a{
     gap:8px;
 }
 
-/* writing list */
-.writing-section{
-    margin-top:64px;
+/* writing page */
+.page-hero{
+    margin-bottom:56px;
 }
 
-.writing-list{
-    list-style:none;
-}
-
-.writing-list li{
-    border-top:1px solid var(--border);
-}
-
-.writing-list li:last-child{
-    border-bottom:1px solid var(--border);
-}
-
-.writing-list a{
-    display:flex;
-    justify-content:space-between;
-    align-items:baseline;
-    gap:20px;
-    padding:16px 4px;
-    color:var(--text);
-    transition:color .18s,padding-left .18s;
-}
-
-.writing-list a:hover{
-    color:var(--accent);
-    padding-left:10px;
-}
-
-.writing-list .title{
+.page-hero h1{
     font-family:var(--serif);
-    font-size:1.1rem;
-    font-weight:500;
+    font-size:clamp(3rem,8vw,4.5rem);
+    font-weight:600;
+    letter-spacing:-.02em;
+    margin-bottom:20px;
 }
 
-.writing-list .date{
+.page-hero p{
+    max-width:640px;
+    color:var(--muted);
+    font-size:1.05rem;
+    line-height:1.6;
+}
+
+.writing-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+    gap:20px;
+}
+
+.writing-card{
+    background:var(--card-bg);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:24px;
+    color:var(--text);
+    transition:border-color .18s,transform .18s;
+}
+
+.writing-card:hover{
+    border-color:var(--accent);
+    transform:translateY(-2px);
+}
+
+.writing-card .section-label{
+    margin-bottom:28px;
+}
+
+.writing-card h2{
+    font-family:var(--serif);
+    font-size:1.25rem;
+    font-weight:600;
+    margin-bottom:6px;
+}
+
+.writing-card .date{
+    display:block;
     color:var(--muted);
     font-size:.85rem;
-    white-space:nowrap;
-    flex-shrink:0;
+    margin-bottom:14px;
+}
+
+.writing-card .excerpt{
+    color:var(--muted);
+    font-size:.9rem;
+    line-height:1.55;
 }
 
 /* projects / bento grid */
